@@ -1,0 +1,20 @@
+
+   public function user(){
+        return $this->hasOne(User::class,'id','user_id');
+    }
+jekhane data lagbe tar model a relaction korte hbe
+
+fast id ta hole user model er
+r second user ta holo jekhane sho hbe tar id
+
+
+normali amra emon dei:
+{{$blog->user_id}}
+
+but ekhane dite hbe:
+ {{$blog->user->name}}
+
+ekhane user ta holo relaction ship er function r name ta holo relaction kora data bashe model er jeta cai 
+amra name cai bole ekhane amra name diyeci
+
+amra onno kicu caile amra onno kicu o nite parbo name er jaigai onno kicu dite hbe 

@@ -1,0 +1,3 @@
+{{ Str::limit($blog->description, 160) }}
+
+limti er pore ... hbe
