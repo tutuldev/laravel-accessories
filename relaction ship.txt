@@ -18,3 +18,17 @@ ekhane user ta holo relaction ship er function r name ta holo relaction kora dat
 amra name cai bole ekhane amra name diyeci
 
 amra onno kicu caile amra onno kicu o nite parbo name er jaigai onno kicu dite hbe 
+
+
+  public function singleblog($id)
+    {
+        $blog = Blog::with('user')->where('id',$id)->first();
+        // return $blog;
+        return view('frontend.singel-blog', compact('blog'));
+
+    }
+with kore dite hbe nai joto bar use korbo toto bar query colbe
+normal obothate emon theke
+  $blog = Blog::where('id',$id)->first();
+just eta add kore dite hbe
+with('user')-> ::::::eta holo oi re
